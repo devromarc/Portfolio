@@ -27,9 +27,9 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
       <div>
-        <h1 className=" font-signature text-5xl ml-2 mt-2">Romarc</h1>
+        <h1 className=" font-signature text-5xl ml-2 mt-2 text-blue-600">Romarc</h1>
       </div>
 
       <ul className=" hidden md:flex">
@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className=" flex flex-col justify-center items-center absolute top-0 left-0  w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        <ul className=" z-9 flex flex-col justify-center items-center absolute top-0 left-0  w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
           {/* <li className=" px-4 cursor-pointer capitalize py-6 text-4xl">home</li> */}
 
           {links.map(({ id, link }) => (
